@@ -18,6 +18,7 @@
 		02ECCBCB29B69E7C009B67E7 /* meteo_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBCA29B69E7C009B67E7 /* meteo_appUITestsLaunchTests.swift */; };
 		02ECCBE229B8C150009B67E7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBE129B8C150009B67E7 /* City.swift */; };
 		02ECCBE529B8C268009B67E7 /* Apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBE429B8C268009B67E7 /* Apiservice.swift */; };
+		02ECCBFF29BA893B009B67E7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBFE29BA893B009B67E7 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		02ECCBCA29B69E7C009B67E7 /* meteo_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meteo_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		02ECCBE129B8C150009B67E7 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		02ECCBE429B8C268009B67E7 /* Apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apiservice.swift; sourceTree = "<group>"; };
+		02ECCBFE29BA893B009B67E7 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,9 @@
 		02ECCBA629B69E7B009B67E7 /* meteo_app */ = {
 			isa = PBXGroup;
 			children = (
+				02ECCBE829B9F0AF009B67E7 /* Widget */,
+				02ECCBE729B918EB009B67E7 /* Presenter */,
+				02ECCBE629B9189B009B67E7 /* View */,
 				02ECCBE329B8C17C009B67E7 /* Services */,
 				02ECCBE029B8C13E009B67E7 /* Models */,
 				02ECCBA729B69E7B009B67E7 /* AppDelegate.swift */,
@@ -145,8 +150,30 @@
 			isa = PBXGroup;
 			children = (
 				02ECCBE429B8C268009B67E7 /* Apiservice.swift */,
+				02ECCBFE29BA893B009B67E7 /* LocationService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		02ECCBE629B9189B009B67E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02ECCBE729B918EB009B67E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		02ECCBE829B9F0AF009B67E7 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +311,7 @@
 				02ECCBAC29B69E7B009B67E7 /* ViewController.swift in Sources */,
 				02ECCBA829B69E7B009B67E7 /* AppDelegate.swift in Sources */,
 				02ECCBE229B8C150009B67E7 /* City.swift in Sources */,
+				02ECCBFF29BA893B009B67E7 /* LocationService.swift in Sources */,
 				02ECCBAA29B69E7B009B67E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
