@@ -55,4 +55,25 @@ class Apiservice{
 
     }
     
+    func decodeAPIcity(_ onSuccess: @escaping(Country) -> Void, onFailure: @escaping(Error) -> Void){
+        guard let url = URL(string: "https://countriesnow.space/api/v0.1/countries") else{return}
+
+        let task = URLSession.shared.dataTask(with: url){
+            data, response, error in
+            
+            let decoder = JSONDecoder()
+
+            if let data = data{
+                do{
+                    let country : Country = try decoder.decode(Country.self, from: data)
+                    onSuccess(country)
+                }catch{
+                    print(error)
+                    onFailure(error)
+                }
+            }
+        }
+        task.resume()
+    }
+    
 }
