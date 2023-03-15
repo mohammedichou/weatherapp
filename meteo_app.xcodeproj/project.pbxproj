@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BCF33E29C10F8B00F1B82D /* CustomCellMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCF33829C10F8B00F1B82D /* CustomCellMainMenu.xib */; };
+		02BCF33F29C10F8B00F1B82D /* CustomCellmultiMeteo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCF33929C10F8B00F1B82D /* CustomCellmultiMeteo.xib */; };
+		02BCF34029C10F8B00F1B82D /* CustomCellmultiMeteo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCF33A29C10F8B00F1B82D /* CustomCellmultiMeteo.swift */; };
+		02BCF34129C10F8B00F1B82D /* Customcellprevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCF33B29C10F8B00F1B82D /* Customcellprevision.swift */; };
+		02BCF34229C10F8B00F1B82D /* Customcellprevision.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCF33C29C10F8B00F1B82D /* Customcellprevision.xib */; };
+		02BCF34329C10F8B00F1B82D /* CustomCellMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCF33D29C10F8B00F1B82D /* CustomCellMainMenu.swift */; };
+		02BCF34829C12D3B00F1B82D /* MeteoCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCF34729C12D3B00F1B82D /* MeteoCtrl.swift */; };
 		02ECCBA829B69E7B009B67E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBA729B69E7B009B67E7 /* AppDelegate.swift */; };
 		02ECCBAA29B69E7B009B67E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBA929B69E7B009B67E7 /* SceneDelegate.swift */; };
 		02ECCBAC29B69E7B009B67E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBAB29B69E7B009B67E7 /* ViewController.swift */; };
@@ -20,6 +27,12 @@
 		02ECCBE529B8C268009B67E7 /* Apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBE429B8C268009B67E7 /* Apiservice.swift */; };
 		02ECCBFF29BA893B009B67E7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCBFE29BA893B009B67E7 /* LocationService.swift */; };
 		02ECCC0129BA9779009B67E7 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCC0029BA9779009B67E7 /* Country.swift */; };
+		02ECCC0529BCB12B009B67E7 /* GeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCC0429BCB12B009B67E7 /* GeocodingService.swift */; };
+		02ECCC0C29BCCBAF009B67E7 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCC0A29BCCBAF009B67E7 /* WeatherCollectionViewCell.swift */; };
+		02ECCC0D29BCCBAF009B67E7 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02ECCC0B29BCCBAF009B67E7 /* WeatherCollectionViewCell.xib */; };
+		02ECCC1529BE28F6009B67E7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCC1429BE28F6009B67E7 /* DataService.swift */; };
+		02ECCC4029BE8BC5009B67E7 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02ECCC3F29BE8BC5009B67E7 /* Data.plist */; };
+		02ECCC4629BFF162009B67E7 /* ConnectedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECCC4529BFF162009B67E7 /* ConnectedService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02BCF33829C10F8B00F1B82D /* CustomCellMainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCellMainMenu.xib; path = ../../../ios/Meteo_P6/Meteo_P6/CustomCell/CustomCellMainMenu.xib; sourceTree = "<group>"; };
+		02BCF33929C10F8B00F1B82D /* CustomCellmultiMeteo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCellmultiMeteo.xib; path = ../../../ios/Meteo_P6/Meteo_P6/CustomCell/CustomCellmultiMeteo.xib; sourceTree = "<group>"; };
+		02BCF33A29C10F8B00F1B82D /* CustomCellmultiMeteo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCellmultiMeteo.swift; path = ../../../ios/Meteo_P6/Meteo_P6/CustomCell/CustomCellmultiMeteo.swift; sourceTree = "<group>"; };
+		02BCF33B29C10F8B00F1B82D /* Customcellprevision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Customcellprevision.swift; path = ../../../ios/Meteo_P6/Meteo_P6/CustomCell/Customcellprevision.swift; sourceTree = "<group>"; };
+		02BCF33C29C10F8B00F1B82D /* Customcellprevision.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Customcellprevision.xib; path = ../../../ios/Meteo_P6/Meteo_P6/CustomCell/Customcellprevision.xib; sourceTree = "<group>"; };
+		02BCF33D29C10F8B00F1B82D /* CustomCellMainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCellMainMenu.swift; path = ../../../ios/Meteo_P6/Meteo_P6/CustomCell/CustomCellMainMenu.swift; sourceTree = "<group>"; };
+		02BCF34729C12D3B00F1B82D /* MeteoCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoCtrl.swift; sourceTree = "<group>"; };
 		02ECCBA429B69E7B009B67E7 /* meteo_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meteo_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02ECCBA729B69E7B009B67E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02ECCBA929B69E7B009B67E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +77,12 @@
 		02ECCBE429B8C268009B67E7 /* Apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apiservice.swift; sourceTree = "<group>"; };
 		02ECCBFE29BA893B009B67E7 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		02ECCC0029BA9779009B67E7 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		02ECCC0429BCB12B009B67E7 /* GeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingService.swift; sourceTree = "<group>"; };
+		02ECCC0A29BCCBAF009B67E7 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		02ECCC0B29BCCBAF009B67E7 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
+		02ECCC1429BE28F6009B67E7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		02ECCC3F29BE8BC5009B67E7 /* Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		02ECCC4529BFF162009B67E7 /* ConnectedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02BCF34629C12D1C00F1B82D /* CTRL */ = {
+			isa = PBXGroup;
+			children = (
+				02ECCBAB29B69E7B009B67E7 /* ViewController.swift */,
+				02BCF34729C12D3B00F1B82D /* MeteoCtrl.swift */,
+			);
+			path = CTRL;
+			sourceTree = "<group>";
+		};
 		02ECCB9B29B69E7B009B67E7 = {
 			isa = PBXGroup;
 			children = (
@@ -108,13 +143,13 @@
 			isa = PBXGroup;
 			children = (
 				02ECCBE829B9F0AF009B67E7 /* Widget */,
-				02ECCBE729B918EB009B67E7 /* Presenter */,
+				02ECCBE729B918EB009B67E7 /* ViewModel */,
 				02ECCBE629B9189B009B67E7 /* View */,
 				02ECCBE329B8C17C009B67E7 /* Services */,
+				02BCF34629C12D1C00F1B82D /* CTRL */,
 				02ECCBE029B8C13E009B67E7 /* Models */,
 				02ECCBA729B69E7B009B67E7 /* AppDelegate.swift */,
 				02ECCBA929B69E7B009B67E7 /* SceneDelegate.swift */,
-				02ECCBAB29B69E7B009B67E7 /* ViewController.swift */,
 				02ECCBAD29B69E7B009B67E7 /* Main.storyboard */,
 				02ECCBB029B69E7C009B67E7 /* Assets.xcassets */,
 				02ECCBB229B69E7C009B67E7 /* LaunchScreen.storyboard */,
@@ -145,6 +180,7 @@
 			children = (
 				02ECCBE129B8C150009B67E7 /* City.swift */,
 				02ECCC0029BA9779009B67E7 /* Country.swift */,
+				02ECCC3F29BE8BC5009B67E7 /* Data.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,6 +190,9 @@
 			children = (
 				02ECCBE429B8C268009B67E7 /* Apiservice.swift */,
 				02ECCBFE29BA893B009B67E7 /* LocationService.swift */,
+				02ECCC0429BCB12B009B67E7 /* GeocodingService.swift */,
+				02ECCC1429BE28F6009B67E7 /* DataService.swift */,
+				02ECCC4529BFF162009B67E7 /* ConnectedService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,15 +200,23 @@
 		02ECCBE629B9189B009B67E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				02ECCC0A29BCCBAF009B67E7 /* WeatherCollectionViewCell.swift */,
+				02ECCC0B29BCCBAF009B67E7 /* WeatherCollectionViewCell.xib */,
+				02BCF33D29C10F8B00F1B82D /* CustomCellMainMenu.swift */,
+				02BCF33829C10F8B00F1B82D /* CustomCellMainMenu.xib */,
+				02BCF33A29C10F8B00F1B82D /* CustomCellmultiMeteo.swift */,
+				02BCF33929C10F8B00F1B82D /* CustomCellmultiMeteo.xib */,
+				02BCF33B29C10F8B00F1B82D /* Customcellprevision.swift */,
+				02BCF33C29C10F8B00F1B82D /* Customcellprevision.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		02ECCBE729B918EB009B67E7 /* Presenter */ = {
+		02ECCBE729B918EB009B67E7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Presenter;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		02ECCBE829B9F0AF009B67E7 /* Widget */ = {
@@ -284,7 +331,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				02ECCBB429B69E7C009B67E7 /* LaunchScreen.storyboard in Resources */,
+				02ECCC4029BE8BC5009B67E7 /* Data.plist in Resources */,
+				02BCF34229C10F8B00F1B82D /* Customcellprevision.xib in Resources */,
+				02ECCC0D29BCCBAF009B67E7 /* WeatherCollectionViewCell.xib in Resources */,
 				02ECCBB129B69E7C009B67E7 /* Assets.xcassets in Resources */,
+				02BCF33F29C10F8B00F1B82D /* CustomCellmultiMeteo.xib in Resources */,
+				02BCF33E29C10F8B00F1B82D /* CustomCellMainMenu.xib in Resources */,
 				02ECCBAF29B69E7B009B67E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,12 +363,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				02ECCBE529B8C268009B67E7 /* Apiservice.swift in Sources */,
+				02ECCC1529BE28F6009B67E7 /* DataService.swift in Sources */,
 				02ECCC0129BA9779009B67E7 /* Country.swift in Sources */,
 				02ECCBAC29B69E7B009B67E7 /* ViewController.swift in Sources */,
+				02ECCC4629BFF162009B67E7 /* ConnectedService.swift in Sources */,
+				02BCF34129C10F8B00F1B82D /* Customcellprevision.swift in Sources */,
 				02ECCBA829B69E7B009B67E7 /* AppDelegate.swift in Sources */,
+				02BCF34329C10F8B00F1B82D /* CustomCellMainMenu.swift in Sources */,
+				02BCF34029C10F8B00F1B82D /* CustomCellmultiMeteo.swift in Sources */,
+				02ECCC0C29BCCBAF009B67E7 /* WeatherCollectionViewCell.swift in Sources */,
 				02ECCBE229B8C150009B67E7 /* City.swift in Sources */,
 				02ECCBFF29BA893B009B67E7 /* LocationService.swift in Sources */,
 				02ECCBAA29B69E7B009B67E7 /* SceneDelegate.swift in Sources */,
+				02ECCC0529BCB12B009B67E7 /* GeocodingService.swift in Sources */,
+				02BCF34829C12D3B00F1B82D /* MeteoCtrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

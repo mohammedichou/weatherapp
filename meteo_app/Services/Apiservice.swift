@@ -33,8 +33,9 @@ class Apiservice{
     
     
     
-    func decodeAPI(_ onSuccess: @escaping(City) -> Void, onFailure: @escaping(Error) -> Void){
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lang=fr&lat=48.866667&lon=2.333333&units=metric&appid=a4ae7d12d35c1495e11c5300200470cd") else{return}
+    func decodeAPI(lat : Double , long : Double , _ onSuccess: @escaping(City) -> Void, onFailure: @escaping(Error) -> Void){
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lang=fr&lat=\(lat)&lon=\(long)&units=metric&appid=a4ae7d12d35c1495e11c5300200470cd") else{return}
+        print(url)
 
         let task = URLSession.shared.dataTask(with: url){
             data, response, error in
@@ -74,6 +75,35 @@ class Apiservice{
             }
         }
         task.resume()
+    }
+    
+    func decodeAPIcity5days(lat : Double , long : Double , _ onSuccess: @escaping() -> Void, onFailure: @escaping(Error) -> Void){
+        
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/forecast?lang=fr&lat=\(lat)&lon=\(long)&units=metric&appid=a4ae7d12d35c1495e11c5300200470cd") else{return}
+        print(url)
+
+        let task = URLSession.shared.dataTask(with: url){
+            data, response, error in
+            
+            let decoder = JSONDecoder()
+
+            if let data = data{
+                do{
+                    guard let dictionaryObj = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                            return
+                        }
+                    print(dictionaryObj["List"])
+                    
+                    
+                    onSuccess()
+                }catch{
+                    print(error)
+                    onFailure(error)
+                }
+            }
+        }
+        task.resume()
+        
     }
     
 }

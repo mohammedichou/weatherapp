@@ -9,7 +9,7 @@ import Foundation
 
 
 struct City: Identifiable, Codable {
-    var coord: Coord
+    var coord: Coord?
     var weather: [Weather]
     var base: String
     var main: Main
