@@ -35,7 +35,7 @@ class DataService {
         let userDefaults = UserDefaults.standard
         let object = userDefaults.object(forKey: "villes")
         let decoder = JSONDecoder()
-        if let decoded = try? decoder.decode([String].self, from: object as! Data) {
+        if let decoded = try? decoder.decode([String].self, from: object  as? Data ?? Data()) {
             array = decoded
             array.append(ville)
             }
@@ -51,9 +51,13 @@ class DataService {
         let userDefaults = UserDefaults.standard
         let object = userDefaults.object(forKey: "villes")
         let decoder = JSONDecoder()
-        if let decoded = try? decoder.decode([String].self, from: object as! Data) {
-                onSuccess(decoded as! [String])
-            }
+        print(decoder)
+        if(decoder != nil){
+            if let decoded = try? decoder.decode([String].self, from: object as? Data ?? Data() ) {
+                    onSuccess(decoded as! [String])
+                }
+        }
+        
     }
     
     func removeville(ville : String){
@@ -77,7 +81,7 @@ class DataService {
         let userDefaults = UserDefaults.standard
         let object = userDefaults.object(forKey: ville)
         let decoder = JSONDecoder()
-        if let decoded = try? decoder.decode(City.self, from: object as! Data) {
+        if let decoded = try? decoder.decode(City.self, from: object as? Data ?? Data() ) {
                 onSuccess(decoded as! City)
             }
     }

@@ -111,14 +111,19 @@ class ViewController: UIViewController, UISearchControllerDelegate, UISearchBarD
     }
     
     func inittableaumeteo(){
-        for i in 0...tableallVille.count-1{
-            print(tableallVille[i])
-            DataService.shared.getonemeteo(ville: tableallVille[i]) { meteo in
-                self.allmeteo.append(meteo)
-                if(i == self.tableallVille.count - 1){
-                    self.collectionView?.reloadData()
+        print(tableallVille)
+        if(tableallVille.count > 0){
+            for i in 0...tableallVille.count-1{
+                print(i)
+                print(tableallVille[i])
+                DataService.shared.getonemeteo(ville: tableallVille[i]) { meteo in
+                    self.allmeteo.append(meteo)
+                    if(i == self.tableallVille.count - 1){
+                        self.collectionView?.reloadData()
+                    }
                 }
             }
+
         }
     }
     
